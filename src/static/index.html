@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link <link rel="stylesheet" href="/src/stylesheets/style.scss" />
+    <link <link rel="stylesheet" href="/src/stylesheets/light.scss" media="(prefers-color-scheme: light)" />
+    <link <link rel="stylesheet" href="/src/stylesheets/dark.scss" media="(prefers-color-scheme: dark)" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <button class="header__button button button--color-light | js-hide-button" type="button">Button</button>
+            </div>
+        </header>
+        <section class="section form-section">
+            <div class="form-section__container">
+                <form action="" class="form | js-form">
+                    <div></div>
+
+                    <label for="text" class="form__label">введите текст <strong>(required)</strong>
+                    </label>
+                    <input id="text" name="text" class="form__input" type="text" placeholder="text" />
+                    <label for="phone1" autocomplete="on" class="form__label">введите номер телефона
+                    </label>
+                    <input id="phone1" name="phone1" class="form__input" type="tel" placeholder="+1 23 34" />
+                    <label for="phone2" autocomplete="off" class="form__label">введите номер телефона
+                    </label>
+                    <input id="phone2" name="phone2" class="form__input" type="tel" placeholder="+1 23 34" />
+                    <button class="form__button button" type="submit">submit</button>
+                </form>
+                <div id="successMessage" style="display: none;">Succes<br><span>Meassege sent!</span></div>
+
+            </div>
+        </section>
+        <section class="section content">
+            <div class="content__container">
+                <div class="content__inner | js-card-animation">
+                    <div class="content__picture hidden ">
+                        <picture class="picture | js-lazy-load">
+                            <source type="image/jpeg" data-srcset="./image-512.jpg" media="(max-width: 512px)">
+                            <source type="image/jpeg" data-srcset="./image-768.jpg" media="(max-width: 768px)">
+                            <source type="image/jpeg" data-srcset="./image-1280.jpg" media="(min-width:769px)">
+                            <img data-src="./image-512.jpg" width="512" height="342" alt="image">
+                        </picture>
+                    </div>
+
+                    <div class="content__text hidden">
+                        <p>
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptates quaerat totam repellat
+                            culpa
+                            ut impedit iste natus ex, at, consequuntur possimus velit ducimus ipsa sunt obcaecati
+                            assumenda,
+                            alias harum odit?
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>
